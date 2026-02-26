@@ -1,0 +1,67 @@
+{
+  "brands": [
+    {
+      "name": "Amazon",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/120px-Amazon_logo.svg.png",
+      "description": "Product launch campaign videos for Prime Day global rollout.",
+      "views": "24M",
+      "metric": "3 Ads",
+      "metricType": "Delivered",
+      "logoFilter": "none"
+    },
+    {
+      "name": "Mastercard",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Mastercard-logo.svg/120px-Mastercard-logo.svg.png",
+      "description": "Financial literacy series with animated explainer videos.",
+      "views": "8.5M",
+      "metric": "6 Episodes",
+      "metricType": "Produced",
+      "logoFilter": "none"
+    },
+    {
+      "name": "Spotify",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Spotify_logo_without_text.svg/96px-Spotify_logo_without_text.svg.png",
+      "description": "Artist spotlight docs and social media content reels.",
+      "views": "15M",
+      "metric": "12 Reels",
+      "metricType": "Created",
+      "logoFilter": "none"
+    },
+    {
+      "name": "Adidas",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Adidas_Logo.svg/120px-Adidas_Logo.svg.png",
+      "description": "Athlete campaign edits and product story short-form videos.",
+      "views": "31M",
+      "metric": "8 Campaigns",
+      "metricType": "Executed",
+      "logoFilter": "invert(1)"
+    },
+    {
+      "name": "BMW",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/96px-BMW.svg.png",
+      "description": "Luxury automotive reveal films with cinematic colour grading.",
+      "views": "9M",
+      "metric": "4 Films",
+      "metricType": "Edited",
+      "logoFilter": "none"
+    },
+    {
+      "name": "Google",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Google_2015_logo.svg/120px-Google_2015_logo.svg.png",
+      "description": "Internal training series and product feature announcement videos.",
+      "views": "18M",
+      "metric": "10 Videos",
+      "metricType": "Delivered",
+      "logoFilter": "none"
+    },
+    {
+      "name": "BMW",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/96px-BMW.svg.png",
+      "description": "Luxury automotive reveal films with cinematic colour grading.",
+      "views": "9M",
+      "metric": "4 Films",
+      "metricType": "Edited",
+      "logoFilter": "none"
+    }
+  ]
+}
