@@ -1,103 +1,94 @@
-/* ═══════════════════════════════════════
-   ROOT & RESET
-═══════════════════════════════════════ */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
 :root {
-  --bg-deep: #050810;
-  --bg-mid: #080d1a;
-  --accent-1: #7b5ea7;
-  --accent-2: #4e9af1;
-  --accent-3: #c77dff;
-  --gold: #f0b429;
-  --wa-green: #25d366;
-
-  --glass-bg: rgba(255, 255, 255, 0.04);
-  --glass-border: rgba(255, 255, 255, 0.10);
-  --glass-hover: rgba(255, 255, 255, 0.07);
-
-  --text-primary: #f0f0f8;
-  --text-secondary: rgba(240, 240, 248, 0.60);
-  --text-muted: rgba(240, 240, 248, 0.38);
-
-  --font-display: 'Clash Display', sans-serif;
-  --font-body: 'Satoshi', sans-serif;
-
-  --radius-sm: 10px;
-  --radius-md: 18px;
-  --radius-lg: 28px;
-
-  --shadow-glass: 0 8px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.06);
-  --shadow-glow: 0 0 40px rgba(123, 94, 167, 0.25);
+    --bg-color: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --accent-color: #e50914; /* Cinematic Red */
+    --text-main: #ffffff;
+    --text-dim: #b3b3b3;
 }
-
-html { scroll-behavior: smooth; }
 
 body {
-  background: var(--bg-deep);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 18px;              /* UPDATED */
-  line-height: 1.7;             /* UPDATED */
-  overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-main);
+    font-family: 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    line-height: 1.6;
 }
 
-a { color: inherit; text-decoration: none; }
-img { display: block; max-width: 100%; }
-
-/* ═══════════════════════════════════════
-   TYPOGRAPHY SCALE (GLOBAL UPGRADE)
-═══════════════════════════════════════ */
-h1 {
-  font-family: var(--font-display);
-  font-size: clamp(3.2rem, 6vw, 4.8rem);  /* UPDATED */
-  font-weight: 800;
-  line-height: 1.05;
-  letter-spacing: -1.2px;
-  margin-bottom: 22px;
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
 }
 
-.section-title {
-  font-family: var(--font-display);
-  font-size: clamp(2.4rem, 4.5vw, 3.6rem); /* UPDATED */
-  font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 48px;
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to bottom, #1a1a1a, #0a0a0a);
 }
 
-/* ═══════════════════════════════════════
-   NAV UNDERLINE BUG FIX
-═══════════════════════════════════════ */
-.nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -4px;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--accent-3);
-  transform: scaleX(0);              /* FIXED */
-  transform-origin: left;
-  transition: transform 0.25s ease;
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--accent-color);
+    margin-bottom: 20px;
+    object-fit: cover;
 }
 
-.nav-link:hover::after {
-  transform: scaleX(1);              /* FIXED */
+.hero h1 { font-size: 3rem; margin: 10px 0; }
+.description { color: var(--text-dim); font-size: 1.2rem; max-width: 600px; margin: auto; }
+
+.tool-icons {
+    margin-top: 30px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    color: var(--text-dim);
 }
 
-/* ═══════════════════════════════════════
-   TEXT READABILITY IMPROVEMENTS
-═══════════════════════════════════════ */
-.hero-sub { font-size: 20px; }        /* UPDATED */
-.hero-body { font-size: 18px; }       /* UPDATED */
-.about-body { font-size: 19px; }      /* UPDATED */
-.hire-body { font-size: 18px; }       /* UPDATED */
+.tool-icons i:hover { color: var(--accent-color); transition: 0.3s; }
 
-.nav-link { font-size: 17px; }        /* UPDATED */
-.btn { font-size: 16px; }             /* UPDATED */
+/* Client Slider */
+.clients { padding: 40px 0; background: #111; text-align: center; }
+.clients h3 { color: var(--text-dim); margin-bottom: 30px; text-transform: uppercase; letter-spacing: 2px; }
+.client-slider img { height: 50px; filter: grayscale(100%) brightness(200%); padding: 0 20px; }
+
+/* Portfolio Grids */
+.portfolio-section { padding: 60px 0; }
+.portfolio-section h2 { border-left: 4px solid var(--accent-color); padding-left: 15px; margin-bottom: 30px; }
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+}
+
+.video-card iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 8px;
+    background: var(--card-bg);
+}
+
+/* Reels Grid - Vertical Aspect Ratio */
+.reels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.reel-card iframe {
+    width: 100%;
+    aspect-ratio: 9 / 16;
+    border-radius: 12px;
+}
+
+footer { text-align: center; padding: 40px; color: var(--text-dim); font-size: 0.9rem; }
+
+/* Responsive Adjustments */
+@media (max-width: 600px) {
+    .video-grid { grid-template-columns: 1fr; }
+    .hero h1 { font-size: 2rem; }
+}
